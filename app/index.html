@@ -3,7 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Diary-app</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Diary-App</h1>
+    <div class="form-wrap">
+      <form name="diary-form" id="diary-form-id">
+        <label for="diary-date">Date</label> <br />
+        <input type="date" id="date" name="date" /> <br />
+        <label for="Mynotes">My Notes</label> <br />
+        <textarea id="notes-text" name="notes" rows="4" cols="30"> </textarea>
+        <input type="submit" value="Add diary" id="form-submit-btn" />
+      </form>
+    </div>
+    <div id="diary-entry"></div>
+  </body>
 </html>

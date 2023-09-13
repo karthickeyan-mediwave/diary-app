@@ -1,0 +1,94 @@
+body {
+  font-family: sans-serif;
+}
+h1 {
+  text-align: center;
+  color: dodgerblue;
+}
+.form-wrap {
+  padding: 15px;
+  width: 300px;
+  margin: 10px auto;
+  background-color: aliceblue;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+.diary-form-id {
+  padding: 15px;
+  width: 300px;
+}
+input[type="date"] {
+  width: 258px;
+  margin: 10px 0 10px 0;
+}
+textarea {
+  margin-top: 15px;
+}
+#form-submit-btn {
+  padding: 5px 8px;
+  margin: 15px 0 0 100px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+#diary-entry {
+  margin-top: 100px;
+  padding: 20px;
+}
+.note-card {
+  border-radius: 5px;
+  border: 1px solid dodgerblue;
+  margin: 5px;
+  padding: 10px;
+  background-color: white;
+  width: 80%;
+  margin: 10px auto;
+}
+#diary-entry {
+  display: grid;
+  grid-template-columns: auto;
+  text-align: center;
+  margin: 20px auto;
+  padding: 100px;
+  border-radius: 25px;
+  background-color: aliceblue;
+}
+h2 {
+  color: dodgerblue;
+}
+.btn {
+  width: 100px;
+  background-color: dodgerblue;
+  color: white;
+  padding: 8px 2px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/* ::-webkit-datetime-edit {
+  padding: 1em;
+}
+::-webkit-datetime-edit-fields-wrapper {
+  background: silver;
+}
+::-webkit-datetime-edit-text {
+  color: red;
+  padding: 0 0.3em;
+}
+::-webkit-datetime-edit-month-field {
+  color: blue;
+}
+::-webkit-datetime-edit-day-field {
+  color: green;
+}
+::-webkit-datetime-edit-year-field {
+  color: purple;
+}
+::-webkit-inner-spin-button {
+  display: none;
+}
+::-webkit-calendar-picker-indicator {
+  background: orange;
+} */
