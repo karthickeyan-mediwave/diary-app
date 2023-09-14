@@ -56,8 +56,9 @@ textarea {
   background-color: aliceblue;
 }
 h2 {
-  color: dodgerblue;
+  color: #1a0dab;
 }
+
 .btn {
   width: 100px;
   background-color: dodgerblue;
@@ -65,6 +66,7 @@ h2 {
   padding: 8px 2px;
   border: 1px solid white;
   border-radius: 5px;
+  float: right;
 }
 
 /* ::-webkit-datetime-edit {

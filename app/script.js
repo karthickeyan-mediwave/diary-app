@@ -36,7 +36,7 @@ function diaryForm() {
     const notes = document.querySelector("#notes-text").value;
 
     const diary = {
-      id: date.getTime(),
+      id: new Date().getTime(),
       date: formDate,
       note: notes,
     };
@@ -90,12 +90,14 @@ function dateSort() {
 }
 let objectDate = new Date();
 
-function dateformat() {
-  let day = objectDate.getDate();
-  let month = objectDate.getMonth();
+function dateformat(datepicker) {
+  let datekk = new Date(datepicker);
+  let day = datekk.getDate();
+  let month = datekk.getMonth();
   let correctmonth = month + 1;
-  let year = objectDate.getFullYear();
+  let year = datekk.getFullYear();
   let format4 = `${day}-${correctmonth}-${year}`;
+  console.log(format4);
   return format4;
 }
 
