@@ -5,7 +5,7 @@ function makeDiaryDiv(note) {
   div.setAttribute("class", "note-card");
   div.setAttribute("id", `note-${note.id}`);
   const h2 = document.createElement("h2");
-  h2.innerText = note["date"];
+  h2.innerText = dateformat(note["date"]);
   const h3 = document.createElement("h3");
   h3.innerText = note["note"];
 
@@ -34,8 +34,9 @@ function diaryForm() {
     e.preventDefault();
     const formDate = document.querySelector("#date").value;
     const notes = document.querySelector("#notes-text").value;
+
     const diary = {
-      id: new Date().getTime(),
+      id: date.getTime(),
       date: formDate,
       note: notes,
     };
@@ -46,7 +47,6 @@ function diaryForm() {
 function addNotes(diary) {
   MyNotes.push(diary);
   dateSort();
-  dateformat();
   saveToLocalStorage();
   updateUI();
 }
@@ -96,7 +96,7 @@ function dateformat() {
   let correctmonth = month + 1;
   let year = objectDate.getFullYear();
   let format4 = `${day}-${correctmonth}-${year}`;
-  console.log(format4);
+  return format4;
 }
 
 getFromLocalStorage();
